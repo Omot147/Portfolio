@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolioSite</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#content">Contact</a></li>
+                    <!---close icon-->
+                </ul>
+                   <!--menu icon-->
+
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm <span>Joshua</span> <br> From Nigeria</h1>
+            </div>
+        </div>
+    </div>
+<!----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/portrait-young-man-posing.jpg" width="300px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum recusandae ut ab sed iure saepe quod at eum temporibus! Unde, corporis inventore aspernatur ea odio dolorem saepe eum eaque sunt quos possimus fugiat placeat pariatur, reiciendis architecto adipisci aliquid ex. Doloremque veniam natus, eius corporis illum fugiat ab cupiditate officia!</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>SEO management</span><br> Designing Scalable Web App</li>
+                            <li><span>Responsive Design</span><br> Designing Mobile Friendly Web Apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web App development @ Odinproject</li>
+                            <li><span>2023 - 2024</span><br>Building Hands on projects: Designing Scalable websites</li>
+                            <li><span>2022 - 2023</span><br>Started Learning at W3schools</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Web Design @OdinProject</li>
+                            <li><span>2025</span><br> Started internship @HNGInternship</li>
+                            <li><span>2023</span><br> Noobie @webdesign</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------services---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <!-------icon------->
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <!-------icon------->
+                    <h2>SEO Management</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <!-------icon------->
+                    <h2>Web Maintenance</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/phone.jpg" height="330px" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>Social Media Site</h3>
+                        <p>The site connects you to the talented people around the world.
+                            Download it from play store. </p>
+                            <a href="#"><!-------icon-------></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/african-american-woman-connecting-smart-speaker-phone.jpg" height="330px" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>Music Site</h3>
+                        <p>The site connects you to the talented people around the world.
+                            Download it from play store. </p>
+                            <a href="#"><!-------icon-------></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/side-view-man-using-modern-smartphone-home.jpg" height="330px" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>Online Shopping Site</h3>
+                        <p>The site connects you to the talented people around the world.
+                            Download it from play store. </p>
+                            <a href="#"><!-------icon-------></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more...</a>
+        </div>
+    </div>
+
+ <!----------content---------->
+
+ <div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="coltact-left">
+                <h1 class="sub-title">Contact-me</h1>
+                <p><!-------icon------->omotomoniyi@gmail.com</p>
+                <p><!-------icon------->07026788645</p>
+                <div class="social-icons">
+                    <a href=""><!-------icon-------></a>
+                    <a href=""><!-------icon-------></a>
+                    <a href=""><!-------icon-------></a>
+                    <a href=""><!-------icon-------></a>
+                </div>
+                <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="coltact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email @gmail.com...">
+                    <textarea name="Message"  rows="6" placeholder="Your Message..."></textarea>
+                    <button type="ubmit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><!-------icon------->Copyright @ Joshua.</p>
+    </div>
+ </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            };
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            };
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+</body>
+</html>
