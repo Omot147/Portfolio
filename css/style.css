@@ -312,7 +312,7 @@ form .btn2{
 }
 
 /*-----------------css for small screens-----------------*/
-nav .fas{
+nav .fa-solid{
     display: none;
 }
 
@@ -366,6 +366,12 @@ nav .fas{
     }
     .tab-links{
         font-size: 16px;
-        margin-right: 20px ;
+        margin-right: 20px;
+    }
+    .coltact-right, .coltact-left{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size:14px ;
     }
 }
