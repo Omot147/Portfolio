@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolioSite</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f8cc02f204.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#content">Contact</a></li>
-                    <!---close icon-->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                   <!--menu icon-->
+                   <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
             </nav>
             <div class="header-text">
@@ -75,19 +76,19 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <!-------icon------->
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <!-------icon------->
+                    <i class="fa-solid fa-crop-simple"></i>
                     <h2>SEO Management</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <!-------icon------->
+                    <i class="fa-brands fa-app-store"></i>
                     <h2>Web Maintenance</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa fugit ducimus quia soluta pariatur ratione. Esse vel consequuntur voluptas.</p>
                     <a href="#">Learn more...</a>
@@ -107,7 +108,7 @@
                         <h3>Social Media Site</h3>
                         <p>The site connects you to the talented people around the world.
                             Download it from play store. </p>
-                            <a href="#"><!-------icon-------></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -116,7 +117,7 @@
                         <h3>Music Site</h3>
                         <p>The site connects you to the talented people around the world.
                             Download it from play store. </p>
-                            <a href="#"><!-------icon-------></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -125,7 +126,7 @@
                         <h3>Online Shopping Site</h3>
                         <p>The site connects you to the talented people around the world.
                             Download it from play store. </p>
-                            <a href="#"><!-------icon-------></a>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -140,28 +141,28 @@
         <div class="row">
             <div class="coltact-left">
                 <h1 class="sub-title">Contact-me</h1>
-                <p><!-------icon------->omotomoniyi@gmail.com</p>
-                <p><!-------icon------->07026788645</p>
+                <p><i class="fa-solid fa-paper-plane"></i>omotomoniyi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+234-7026788645</p>
                 <div class="social-icons">
-                    <a href=""><!-------icon-------></a>
-                    <a href=""><!-------icon-------></a>
-                    <a href=""><!-------icon-------></a>
-                    <a href=""><!-------icon-------></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/My CV.pdf" download class="btn btn2">Download CV <i class="fa-solid fa-file"></i></a>
             </div>
             <div class="coltact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email @gmail.com...">
                     <textarea name="Message"  rows="6" placeholder="Your Message..."></textarea>
-                    <button type="ubmit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p><!-------icon------->Copyright @ Joshua.</p>
+        <p>Copyright @ <i class="fa-solid fa-heart"></i> Joshua.</p>
     </div>
  </div>
     <script>
@@ -178,6 +179,17 @@
             };
             event.currentTarget.classList.add('active-link');
             document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = deocument.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-200px';
         }
     </script>
 </body>
